@@ -2,8 +2,7 @@
 Next.js provides [custom server feature](https://nextjs.org/docs/advanced-features/custom-server). So I wondered how much performance improvements we can get from custom server with [Fastify](https://www.fastify.io/) which is a fast implementation of HTTP server on Node.js.
 
 # Conclusion
-Fastify does not improve req/sec of page servings but do improve req/sec of API. If server allow to use [Node.js cluster feature](https://nodejs.org/api/cluster.html), it improves page serving too.
-
+Fastify does not improve req/sec of page servings but do improve req/sec of API. If the server is non-Docker environment, [Node.js cluster feature](https://nodejs.org/api/cluster.html) improves page serving too.
 # Implementations with Fastify
 I prepared 3 implementations.
 
